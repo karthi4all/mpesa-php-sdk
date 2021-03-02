@@ -83,6 +83,20 @@ class Mpesa
         ];
         return $this->makeRequest('/ipg/v1x/reversal/', 18354, 'POST', $fields);
     }
+    
+    function b2c($transactionReference, $customerMSISDN, $amount, $thirdPartReferece, $serviceCode)
+    {
+
+        $fields = [
+            "input_TransactionReference" => $transactionReference,
+            "input_CustomerMSISDN" => $customerMSISDN,
+            "input_Amount" => $amount,
+            "input_ThirdPartyReference" => $thirdPartReferece,
+            "input_ServiceProviderCode" => $serviceCode
+        ];
+
+        return $this->makeRequest('/ipg/v1x/b2cPayment/', 18345,  'POST', $fields);
+    }
 
     /**
      * @param $thirdPartyReference
