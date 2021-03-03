@@ -1,6 +1,6 @@
 {
-    "name": "karson/mpesa-php-sdk",
-    "description": "",
+    "name": "karthi4all/mpesa-php-sdk",
+    "description": "fork of karson/mpesa-php-sdk",
     "keywords": [
         "karson",
         "mpesa-sdk",
@@ -15,8 +15,8 @@
     "type": "library",
     "authors": [
         {
-            "name": "Karson Adam",
-            "email": "karson@turbohost.co",
+            "name": "karthi muthu",
+            "email": "karthi4all@gmail.com",
             "role": "Developer"
         }
     ],
@@ -29,14 +29,9 @@
     },
     "autoload": {
         "psr-4": {
-            "Karson\\MpesaPhpSdk\\": "src"
+            "karthi4all\\MpesaPhpSdk\\": "src"
         }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Karson\\MpesaPhpSdk\\Tests\\": "tests"
-        }
-    },
+    },   
     "scripts": {
         "test": "vendor/bin/phpunit",
         "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
